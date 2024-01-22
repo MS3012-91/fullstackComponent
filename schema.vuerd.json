@@ -3,9 +3,9 @@
     "version": "2.2.12",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -22.0000000000001,
-    "scrollLeft": -16.66666666666666,
-    "zoomLevel": 1,
+    "scrollTop": -288.6666666666671,
+    "scrollLeft": -131.3333333333334,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -60,7 +60,7 @@
               "notNull": true
             },
             "ui": {
-              "active": false,
+              "active": true,
               "pk": true,
               "fk": false,
               "pfk": false,
@@ -190,7 +190,7 @@
           "active": false,
           "left": 89.4998,
           "top": 40.4996,
-          "zIndex": 532,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60,
           "color": "#00FF45"
@@ -199,7 +199,7 @@
       },
       {
         "id": "aa10f104-306d-45f6-9bca-740fa0d09cbd",
-        "name": "Food Preferences",
+        "name": "Pets Characters",
         "comment": "",
         "columns": [
           {
@@ -227,9 +227,9 @@
           },
           {
             "id": "673c3046-4f58-430e-82e9-00facd534ead",
-            "name": "type_of_food",
+            "name": "characterostic",
             "comment": "",
-            "dataType": "VARCHAR",
+            "dataType": "VARCAR",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -242,19 +242,19 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 77.17529296875,
+              "widthName": 82.919921875,
               "widthComment": 60,
-              "widthDataType": 64.6005859375,
+              "widthDataType": 60,
               "widthDefault": 60
             }
           }
         ],
         "ui": {
-          "active": true,
-          "left": 743.0011,
-          "top": 391.1659,
-          "zIndex": 534,
-          "widthName": 105.33349609375,
+          "active": false,
+          "left": 530.2238,
+          "top": 509.4988,
+          "zIndex": 192,
+          "widthName": 95.20263671875,
           "widthComment": 60,
           "color": "#4500FF"
         },
@@ -290,7 +290,7 @@
           },
           {
             "id": "33061fdb-a141-486f-9f9a-81125b6f82c0",
-            "name": "food_id",
+            "name": "characteristic_id",
             "comment": "",
             "dataType": "INTEGER",
             "default": "",
@@ -305,7 +305,7 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 95.92626953125,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -324,7 +324,7 @@
               "notNull": true
             },
             "ui": {
-              "active": false,
+              "active": true,
               "pk": false,
               "fk": true,
               "pfk": false,
@@ -336,10 +336,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 124.9073,
-          "top": 387.1668,
-          "zIndex": 529,
+          "active": true,
+          "left": 78.4254,
+          "top": 325.8703,
+          "zIndex": 193,
           "widthName": 67.75537109375,
           "widthComment": 60,
           "color": "#44A6ADC1"
@@ -364,8 +364,8 @@
           "columnIds": [
             "e8fda9a5-093e-4205-9eef-8f6e3d73500a"
           ],
-          "x": 743.0011,
-          "y": 446.1659,
+          "x": 530.2238,
+          "y": 564.4988000000001,
           "direction": "left"
         },
         "end": {
@@ -373,8 +373,8 @@
           "columnIds": [
             "33061fdb-a141-486f-9f9a-81125b6f82c0"
           ],
-          "x": 518.9073,
-          "y": 452.4168,
+          "x": 508.35166953124997,
+          "y": 391.1203,
           "direction": "right"
         },
         "constraintName": "fk_food preferences_to_pets foods",
@@ -399,8 +399,8 @@
           "columnIds": [
             "c6105875-2e8e-4d97-8c41-6c25a426bc72"
           ],
-          "x": 321.9073,
-          "y": 387.1668,
+          "x": 293.38853476562497,
+          "y": 325.8703,
           "direction": "top"
         },
         "constraintName": "fk_pets_to_pets foods",
