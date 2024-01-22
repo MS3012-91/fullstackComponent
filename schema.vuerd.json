@@ -1,0 +1,411 @@
+{
+  "canvas": {
+    "version": "2.2.12",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -22.0000000000001,
+    "scrollLeft": -16.66666666666666,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "PostgreSQL",
+    "databaseName": "PetsPaw",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "b0f840ff-05d6-4a1f-a253-6192be1eef72",
+        "name": "Pets",
+        "comment": "",
+        "columns": [
+          {
+            "id": "be238cb9-9eb1-4f46-af1f-8d2305fa039c",
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "56d2e796-f5e6-4ce4-8d35-7de21f072bd6",
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "48eb7d1a-6298-447a-bc53-0eb7d92cde7e",
+            "name": "bread",
+            "comment": "[array od breads]",
+            "dataType": "ENUM",
+            "default": "' Unpedigreed'",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 100.2744140625,
+              "widthDataType": 60,
+              "widthDefault": 85.02099609375
+            }
+          },
+          {
+            "id": "f8c4a4a4-fca2-4587-8621-ff9c69a3a4b4",
+            "name": "color",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "94fb27f0-025c-4875-a963-7726783f72ab",
+            "name": "weight",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 62.66455078125,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "4f3fd642-fb60-438f-9aa4-657b699d344e",
+            "name": "gender",
+            "comment": "['male', 'female']",
+            "dataType": "ENUM",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 93.5712890625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 89.4998,
+          "top": 40.4996,
+          "zIndex": 532,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#00FF45"
+        },
+        "visible": true
+      },
+      {
+        "id": "aa10f104-306d-45f6-9bca-740fa0d09cbd",
+        "name": "Food Preferences",
+        "comment": "",
+        "columns": [
+          {
+            "id": "e8fda9a5-093e-4205-9eef-8f6e3d73500a",
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "673c3046-4f58-430e-82e9-00facd534ead",
+            "name": "type_of_food",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.17529296875,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 743.0011,
+          "top": 391.1659,
+          "zIndex": 534,
+          "widthName": 105.33349609375,
+          "widthComment": 60,
+          "color": "#4500FF"
+        },
+        "visible": true
+      },
+      {
+        "id": "b375ba8d-7e28-4ef1-a9e0-626a02b5e807",
+        "name": "Pets Foods",
+        "comment": "",
+        "columns": [
+          {
+            "id": "04095613-bc3c-4f24-843b-e60d6ab8a327",
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "33061fdb-a141-486f-9f9a-81125b6f82c0",
+            "name": "food_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c6105875-2e8e-4d97-8c41-6c25a426bc72",
+            "name": "petsId",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 124.9073,
+          "top": 387.1668,
+          "zIndex": 529,
+          "widthName": 67.75537109375,
+          "widthComment": 60,
+          "color": "#44A6ADC1"
+        },
+        "visible": true
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "id": "1f462400-5301-4fc9-bb5d-4f316897389a",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "aa10f104-306d-45f6-9bca-740fa0d09cbd",
+          "columnIds": [
+            "e8fda9a5-093e-4205-9eef-8f6e3d73500a"
+          ],
+          "x": 743.0011,
+          "y": 446.1659,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "b375ba8d-7e28-4ef1-a9e0-626a02b5e807",
+          "columnIds": [
+            "33061fdb-a141-486f-9f9a-81125b6f82c0"
+          ],
+          "x": 518.9073,
+          "y": 452.4168,
+          "direction": "right"
+        },
+        "constraintName": "fk_food preferences_to_pets foods",
+        "visible": true
+      },
+      {
+        "id": "e16ac6a0-2cb7-4a36-9a0d-dda5c00840b0",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "b0f840ff-05d6-4a1f-a253-6192be1eef72",
+          "columnIds": [
+            "be238cb9-9eb1-4f46-af1f-8d2305fa039c"
+          ],
+          "x": 321.447798046875,
+          "y": 232.4996,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "b375ba8d-7e28-4ef1-a9e0-626a02b5e807",
+          "columnIds": [
+            "c6105875-2e8e-4d97-8c41-6c25a426bc72"
+          ],
+          "x": 321.9073,
+          "y": 387.1668,
+          "direction": "top"
+        },
+        "constraintName": "fk_pets_to_pets foods",
+        "visible": true
+      }
+    ]
+  }
+}
