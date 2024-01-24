@@ -1,0 +1,9 @@
+const patch = require('path');
+require('dotenv').config();
+
+module.exports = {
+  "config": patch.resolve("config", "db.js"),
+  "models-path": patch.resolve("db", "models"),
+  "seeders-path": patch.resolve("db", "seeders"),
+  "migrations-path": patch.resolve("db", "migrations"),
+};
