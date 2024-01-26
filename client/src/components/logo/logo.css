@@ -1,0 +1,27 @@
+.logo, .logo * {
+box-sizing: border-box;
+}
+.logo {
+width: 106.16px;
+height: 24px;
+position: relative;
+}
+.group-20 {
+height: auto;
+position: absolute;
+left: 0px;
+top: 0px;
+overflow: visible;
+}
+.pets-paw {
+height: auto;
+position: absolute;
+right: 2.26%;
+left: 30.04%;
+width: 67.7%;
+bottom: 20.87%;
+top: 26.81%;
+height: 52.32%;
+transform: translate(0px, 0px);
+overflow: visible;
+}

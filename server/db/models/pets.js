@@ -1,7 +1,5 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
   class Pet extends Model {
@@ -26,8 +24,12 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         defaultValue: "Unpedigreed",
       },
-      color: DataTypes.STRING,
-      weight: DataTypes.FLOAT,
+      color: {
+        type: DataTypes.STRING,
+      },
+      weight: {
+        type: DataTypes.FLOAT,
+      },
       gender: {
         type: DataTypes.ENUM,
         values: ["male", "female"],
@@ -36,7 +38,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATEONLY,
         defaultValue: DataTypes.NOW,
       },
-      image: DataTypes.STRING,
+      image: {
+        type: DataTypes.STRING,
+      },
     },
     {
       sequelize,

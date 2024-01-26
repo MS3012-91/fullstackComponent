@@ -1,11 +1,12 @@
-import HeroesPage from "./pages";
+import { RouterProvider } from "react-router-dom";
+import PetsPage from "./pages";
+import router from "./appRouter";
 
 function App() {
   return (
-    <div>
-     <HeroesPage/>
-      
-    </div>
+    <RouterProvider router={router}>
+      <PetsPage />
+    </RouterProvider>
   );
 }
 

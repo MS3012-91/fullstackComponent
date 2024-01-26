@@ -1,0 +1,38 @@
+.top-page-section {
+    display: flex;
+    gap: 10px;
+}
+
+.characteristicsPage{
+    margin-left: 100px;
+}
+
+.header-div {
+    display: flex;
+    padding: 5px 30px;
+    background-color: #FF868E;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.go-back-btn {
+    border-radius: 10px;
+    border:none;
+    background-color: #FBE0DC;
+    width: 40px;
+    height: 40px;
+}
+
+.go-back-btn:hover {
+    border:none;
+    background-color: #FF868E;
+}
+
+
+.go-back-btn:hover > img {
+     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(274deg) brightness(105%) contrast(100%);
+}
